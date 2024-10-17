@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "automate-energy-bill"
+version = "0.1.0"
+description = "Automate pay energy bill"
+authors = ["Vinicius Braga <Vbragadev@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+helium = "^5.1.0"
+
+
+[tool.poetry.group.dev.dependencies]
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
