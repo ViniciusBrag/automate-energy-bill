@@ -46,16 +46,17 @@ for element in element_label_option:
     element.click()
 
 #wait seconds to appear the button 'Avançar'
-sleep(2)
+sleep(3)
 
 #find element 'Avançar'
 next = driver.find_element(By.ID, "btn-buscar")
 
+#Wait page.
+sleep(1.5)
+
 #scrool until button 'Avançar'
 driver.execute_script("arguments[0].scrollIntoView(true);", next)
 
-#wait to after scroll to element.
-sleep(0.8)
 
 #click the element.
 next.click()
